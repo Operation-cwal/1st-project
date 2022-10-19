@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* common.css */
+
+html,body{ margin:0; font-size:20px;}
+*{
+    box-sizing: border-box;
+    color:#626262;
+}
+ul,li{
+    list-style-type: none;
+    margin:0; padding:0;
+}
+h1,h2,h3,h4,h5,h6,p{ margin:0; }
+img{vertical-align: top;}
+a{text-decoration: none;}
+/* 
+    [공통모듈]
+
+    헤더, 풋터, 사이드배너, 글꼴, 색상
+
+    컨포넌트(콘텐츠 유형별 묶음)
+    박스, 팝업, 말풍선, 테이블, 버튼, 아이콘 
+*/
+
+header{
+    background-color: #000;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10%;
+}
+header > h1{}
+header > nav{ font-size:12px; }
+header > nav > a{
+    color:#fff; padding:0 20px;
+    font-size:1rem;
+}
+
+footer{}
+
+
+/* 버튼 */
+.btn-arrow{}
+
+/* 테이블 */
+
+
+/* 여백 */
+.mt100{  margin-top:100px;  }
+.mt200{  margin-top:200px;  }
+.mt300{  margin-top:300px;  }
+.mt400{  margin-top:400px;  }
+.mt500{  margin-top:500px;  }
+
+/* 정렬 */
+.a-l{ text-align: left; }
+.a-c{ text-align: center; }
+.a-r{ text-align: right; }
