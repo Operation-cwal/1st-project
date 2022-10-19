@@ -138,6 +138,56 @@
     border-left:0;
 }
 
+.main_banner{
+    position: fixed;
+    z-index: 999;
+    width: 200px;
+    right:10%;
+    overflow:hidden;
+}
+.main_banner .close_btn{
+    position: absolute;
+    right:0px;
+}
+.main_banner .close_btn a{}
+.main_banner .close_btn a img{}
+
+.main_banner .banner_slide{
+    display: flex;
+    width: 100%;
+}
+.main_banner .banner_slide a{
+    width:100%;
+    display:block;
+    flex-shrink: 0;
+}
+.main_banner .banner_slide a img{
+    width: 100%;
+}
+
+.main_banner .banner_btn{
+    display:flex;
+    position: absolute;
+    bottom:0; right:50%;
+    transform:translateX(50%)
+} 
+.main_banner .banner_btn li input{
+    display:none;
+}
+.main_banner .banner_btn li label{
+    display :block;
+    width : 10px; height:10px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 5px;
+} 
+.main_banner .banner_btn li label:hover{
+    background-color: #243c84;
+}
+
+.main_banner .banner_btn li input:checked + label{
+    background-color: #243c84;
+}
 /* ------------------------------헤더 end------------------------------*/
 
 /* ------------------------------메인 배너------------------------------ */
@@ -148,10 +198,6 @@
     display:flex;
 }
 .visual_1 .slider a{}
-.visual_1 .slider a:nth-child(1){}
-.visual_1 .slider a:nth-child(2){}
-.visual_1 .slider a:nth-child(3){}
-.visual_1 .slider a:nth-child(4){}
 .visual_1 .slider a img{}
 .visual_1 .page_btn{
     width:100%;
@@ -203,7 +249,9 @@
 
 .visual_2{
     background: url("../img/main_beanist_bg.gif");
+    background-size: cover;
     padding:112px 0 80px;
+    position: relative;
 }
 
 .visual_2 .title_beanist{
@@ -275,6 +323,30 @@
 }
 .visual_2 .beanist_pic ul .coffee_mix a{}
 .visual_2 .beanist_pic ul .coffee_mix a img{}
+
+.visual_2 .beanist_btn{
+    display:flex;
+    position: absolute;
+    top:90%; right:50%;
+    transform:translateX(50%)
+}
+.visual_2 .beanist_btn li input{
+    display: none;    
+}
+
+.visual_2 .beanist_btn li label{
+    display :block;
+    width : 10px; height:10px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 5px;
+}
+.visual_2 .beanist_btn li label:hover{
+    background-color: #90470c;
+}
+.visual_2 .beanist_btn li input:checked + label{
+    background-color: #90470c;
+}
 
 /* ------------------------------비니스트 배너 end------------------------------ */
 
