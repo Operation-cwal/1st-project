@@ -22,6 +22,9 @@
     display:flex;
     font-family: 'Noto Sans KR', sans-serif;
 }
+.top_align .nav{
+    display:flex;
+}
 .top_align .nav_1{
     display:flex;
     justify-content: center;
@@ -56,7 +59,6 @@
 }
 .top_align .search form{
     position:relative;
-    float:left;
     width:195px;
 }
 .top_align .search form input{
@@ -94,17 +96,15 @@
     justify-content: center;
     align-items: center;
 }
+
 .title .sub_title li{
     margin:25px 45px;
     font-size:16px;
 }
-.top_align .nav{
-    display:flex;
-}
+
 
 .top_nav .under_subtitle{
     width:100%;
-    position: absolute;
     right: 0;
     z-index: 9;
 }
@@ -114,11 +114,10 @@
     align-items:flex-start;
     margin:0px auto;
     width:70%;
+    position: absolute;
 }
-.top_nav .under_subtitle:hover{   
-    transform: translateY(100%);
-}
-.top_nav .under_subtitle::after{
+
+/* .top_nav .under_subtitle::after{
     content: "";
     display: block;
     border-bottom:1px solid #fff;
@@ -126,20 +125,25 @@
     position:fixed;
     background-color: #fff;
     height:500px;
-    z-index: -1;
-    transform: translateY(-100%);
+    z-index: -2;
+    transform: translateY(0%);
+    transition: 0.7s;
+    opacity: 0;
+}
+.top_nav .sub_title:hover::after{   
+    transform: translateY(0%);
+    opacity: 1;
 }
 
-
-.top_nav .under_subtitle ul li{
+.top_nav .under_subtitle li{
     width:170px; margin:0 0 0 40px;
     padding:0;
 }
-.top_nav .under_subtitle ul li a{
+.top_nav .under_subtitle li a{
     font-size:13px;
     width:130px;
 }
-
+ */
 .top_align .nav_1 li::before{
     content:"";
     border-left:1px solid #243c84;
@@ -178,7 +182,7 @@
 
 .main_banner{
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     width: 200px;
     right:10%;
     overflow:hidden;
@@ -186,9 +190,8 @@
 .main_banner .close_btn{
     position: absolute;
     right:0px;
+    z-index: 999;
 }
-.main_banner .close_btn a{}
-.main_banner .close_btn a img{}
 
 .main_banner .banner_slide{
     display: flex;
@@ -196,7 +199,7 @@
 }
 .main_banner .banner_slide a{
     width:100%;
-    display:block;
+    display:block; 
     flex-shrink: 0;
 }
 .main_banner .banner_slide a img{
@@ -208,7 +211,10 @@
     position: absolute;
     bottom:0; right:50%;
     transform:translateX(50%)
-} 
+}
+.main_banner .banner_btn label.on{
+    background-color: #243c84;
+}
 .main_banner .banner_btn li input{
     display:none;
 }
@@ -218,14 +224,15 @@
     background-color: #fff;
     border-radius: 100%;
     margin: 5px;
-} 
+}
 .main_banner .banner_btn li label:hover{
     background-color: #243c84;
 }
 
-.main_banner .banner_btn li input:checked + label{
+/* .main_banner .banner_btn li input:checked + label{
     background-color: #243c84;
-}
+} */
+
 /* ------------------------------헤더 end------------------------------*/
 
 /* ------------------------------메인 배너------------------------------ */
@@ -260,25 +267,27 @@
 .visual_1 .page_btn .page_c_btn{
     display:flex;
     position: absolute;
-    top:90%; right:50%;
+    top:93%; right:50%;
     transform:translateX(50%)
 }
-.visual_1 .page_btn .page_c_btn input{
+.visual_1 .page_btn .page_c_btn li input{
     display:none;
 }
-.visual_1 .page_btn .page_c_btn label{
+.visual_1 .page_btn .page_c_btn li label{
     display :block;
     width : 10px; height:10px;
     background-color: #fff;
     border-radius: 100%;
     margin: 5px;
 }
+
+.page_c_btn li label.on{
+    background-color: #243c84;
+}
 .visual_1 .page_btn .page_c_btn label:hover{
     background-color: #243c84;
 }
-.visual_1 .page_btn .page_c_btn input:checked + label{
-    background-color: #243c84;
-}
+
 
 
 /* ------------------------------메인 배너 end-------------------------------- */
@@ -343,8 +352,11 @@
 .visual_2 .beanist_pic ul .americano{
     flex-shrink:0;
     width:100%;
+    margin:0.2%;
 }
-.visual_2 .beanist_pic ul .americano a{}
+.visual_2 .beanist_pic ul .americano a{
+    margin:2%
+}
 .visual_2 .beanist_pic ul .americano a img{}
 
 

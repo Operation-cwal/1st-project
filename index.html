@@ -20,9 +20,11 @@
 
     
     
-    <title>Document</title>
-    
+    <title>EDIYA COFFE</title>
+
     <link rel = "stylesheet" href = "./css/EDIYA COFFEE_main page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src = "./javascript/EDIYA COFFEE_main page.js"></script>
 </head>
 <body>
 
@@ -162,7 +164,7 @@
             <ul class = "banner_btn">
                 <li>
                     <input id = "banner_btn_1" type = "checkbox">
-                    <label for = "banner_btn_1"> </label>
+                    <label for = "banner_btn_1" class = "on"> </label>
                 </li>
                 <li>
                     <input id = "banner_btn_2" type = "checkbox">
@@ -186,13 +188,13 @@
             </div>
             <div class = "page_btn">
                 <div class = "page_a_btn">
-                    <a href = "#"><img src="./img/main_visual_prev.png"></a>
-                    <a href = "#"><img src="./img/main_visual_next.png"></a>
+                    <a href = "#"><img src = "./img/main_visual_prev.png" data-btn = "prev"></a>
+                    <a href = "#"><img src = "./img/main_visual_next.png" data-btn = "next"></a>
                 </div>
                 <ul class = "page_c_btn">
                     <li>
                         <input id = "page_c_btn_1" type = "checkbox">
-                        <label for = "page_c_btn_1"> </label>
+                        <label for = "page_c_btn_1" class = "on"> </label>
                     </li>
                     <li>
                         <input id = "page_c_btn_2" type = "checkbox">

@@ -1,0 +1,166 @@
+@import url("./common.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Nunito+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Nunito+Sans:wght@200;900&display=swap');
+
+
+/* *{
+    border:1px solid red;
+} */
+
+.contents_wrap{
+    padding-top: 130px;
+}
+
+.top_banner{
+    background: url("../img/news_visual.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 460px;
+    position: relative;
+    text-align: center;
+}
+.top_banner h1{
+    padding:116px 0 19px;
+    font-size: 48px;
+    color: #202023;
+    line-height: 1.2em;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: lighter;
+}
+.top_banner p{
+    display: block;
+    color: #000;
+    font-size: 18px;
+}
+.top_banner p span{color:#000}
+
+.location{
+    text-align: right;
+    font-size: 12px;
+    margin: 40px auto 0;
+}
+.location span{
+    background:url("../img/icon_loc.png") right no-repeat;
+    margin-right:8px;
+    padding-right:15px;
+}
+
+.board{
+    max-width: 1180px;
+    margin:0 auto;
+    padding:0 15px 100px;
+}
+.board_title{
+    padding:24px 0;
+    margin-top: 40px;
+    overflow: hidden;
+    border-top:2px solid #002f6c;
+    border-bottom:1px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+}
+.board_title h2{
+    display:inline-block;
+    width:78%;
+    font-size: 20px;
+    margin-bottom:0;
+    font-weight: 500;
+    color:#202023;
+}
+.board_title p{
+    display: inline-block;
+    width:22%;
+    text-align: right;
+    color:#898989;
+    font-size: 12px;
+}
+.board_title p span{
+    color:#002f6c;
+}
+
+.state{
+    width:100%;
+    margin: 20px 0;
+    text-align: right;
+}
+.state span{width: 100px;
+    line-height: 30px;
+    border-radius: 15px;
+    color:#fff;
+    text-align: center;
+    font-weight: 500;
+    background: #6bb93f;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.main_pic{
+    width: 100%;
+    word-break: normal;
+    word-wrap: break-word;
+    font-size: 30px;
+    text-align: center;
+}
+.main_pic p{
+    width:100%;
+    height: 100%;
+    vertical-align: top;
+    margin-bottom: 24px;
+}
+
+.event_list{
+    margin-top: 70px;
+    overflow: hidden;
+    border-top:1px solid #002f6c;
+    padding:20px 0 0 85%;
+}
+.event_list a{
+    display: flex;
+    width:170px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid #d9d9d9;
+    border-radius: 3px;
+    color:#464646;
+    font-size: 13px;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+
+.board_list{
+    width: 100%;
+    padding: 50px 0;
+}
+.board_list ul li{
+    display:flex;
+    font-size: 13px;
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    overflow: hidden;
+    line-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.board_list ul li:nth-of-type(2){
+    border-bottom: 1px solid #d9d9d9;
+}
+.board_list ul li p{
+    width: 80px; text-align: center;
+    background: url("../img/board_veiw_bar.gif") no-repeat right center;
+    line-height: 30px;
+}
+.board_list ul li a{
+    width:940px;
+    padding-left: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board_list ul li span{
+    padding:0 20px 0 0;
+    text-align: right;
+    color: #898989;
+}

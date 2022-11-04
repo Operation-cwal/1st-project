@@ -1,0 +1,378 @@
+@import url("./common.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Nunito+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Nunito+Sans:wght@200;900&display=swap');
+
+.contents_wrap{
+    padding-top: 130px;
+    position: relative;
+}
+
+.top_banner{
+    background: url("../img/beanist_visual.jpg") no-repeat center;
+    background-size: cover;
+    height: 460px;
+}
+
+.beanist_visual h1{
+    padding:116px 0 19px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: lighter;
+    color:#202023;
+}
+.beanist_visual p{
+    display: block;
+    margin:-10px auto 0;
+    text-align: center;
+    font-size: 26px;
+    color: #202023;
+}
+
+.prod_sort{
+    position: absolute;
+    top:431px;
+    text-align:center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prod_sort li{
+    width:168px;
+    display: inline-block;
+    margin-bottom: -1px;
+    font-size: 13px;
+    border:solid 1px #84847c;
+    border-right: none;
+}
+.prod_sort li:nth-child(6){
+    border-right: solid 1px #84847c;
+}
+.prod_sort li:hover a{
+    background-color: #84847c;
+    border:solid 1px #84847c;
+    color:#fff;
+}
+.prod_sort li.on a{
+    color:#fff;
+    font-weight: 500;
+    background-color: #84847c;
+}
+.prod_sort li a{
+    height: 37px;
+    display: block;
+    line-height: 37px;
+    text-align: center;
+}
+
+.bean_top{
+    position: relative;
+    max-width: 1180px;
+    margin:0 auto;
+    padding: 70px 0 20px;
+}
+
+.location{
+    display: block;
+    max-width: 1180px;
+    text-align: right;
+    margin: 0 auto;
+    padding-top: 38px;
+    color:#898989;
+    font-size: 12px;
+}
+.location span{
+    background: url("../img/icon_loc.png") right no-repeat;
+    padding-right: 15px;
+}
+
+.bean_intro{
+    text-align: center;
+}
+.bean_intro h2{
+    font-weight: normal;
+    vertical-align: top;
+}
+.bean_intro p{
+    margin:45px 0 35px;
+    color:#202023;
+    font-weight: 300;
+    line-height: 1.4em;
+
+}
+.bean_intro p span{
+    display: block;
+}
+
+.back_line{
+    font-size: 14px;
+    padding-top: 38px;
+    background: url("../img/beanist_line.gif") center top no-repeat;
+    color:#464646;
+    line-height: 1.4em; 
+}
+
+.bean_his{
+    display: flex;
+    width: 100%;
+    padding: 70px 20px;
+    margin-top: 67px;
+    border:1px solid #d9d9d9;
+    justify-content: space-around;
+
+}
+.bean_his li{
+    width: 280px;
+    text-align: center;
+}
+.bean_his li h3{
+    padding-top: 197px;
+    color: #202023;
+    font-size: 17px;
+}
+.bean_his li:nth-child(1) h3{
+    background: url("../img/beanist_icon01.jpg") center top no-repeat;
+}
+.bean_his li:nth-child(2) h3{
+    background: url("../img/beanist_icon02.jpg") center top no-repeat;
+}
+.bean_his li:nth-child(3) h3{
+    background: url("../img/beanist_icon03.jpg") center top no-repeat;
+}
+.bean_his li p{
+    font-size: 13px;
+    padding-top: 20px;
+    color:#464646;
+    display: block;
+    line-height: 20px;
+}
+
+.bean_middle{
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding:70px 0 20px;
+    display: block;
+}
+
+.bean_tab{
+    display: flex;
+}
+.bean_tab li{
+    width: 170px;
+    margin-right: 5px;
+}
+.bean_tab li a{
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.bean_tab li.on{}
+
+.bean_tab li.on a{
+    background: #002f6c;
+    border-color: #002f6c;
+    color:#fff;
+}
+
+.americano{
+    display: table;
+    padding:80px 0;
+    width: 100%;
+    margin-top: 70px;
+    font-style: normal;
+}
+.americano ul{
+    display: flex;
+    justify-content: space-around;
+}
+.americano ul li{
+    border-right: 1px dotted #ddd;
+    text-align: center;
+    margin:0 auto;
+    width:33.3%;
+    line-height: 21px;
+}
+.americano ul li img{}
+.americano ul li h2{
+    font-size: 18px;
+    margin-top: 36px;
+    color:#202023;
+}
+.americano ul li h3{
+    font-size: 13px;
+    margin:4px 0 15px;
+    color:#862021;
+    font-weight: 800;
+}
+.americano ul li p{
+    margin:0 auto;
+    font-size: 13px;
+    width: 320px;
+    color:#464646
+}
+
+.latte{
+    display: block;
+}
+.latte .latte_main{
+    width:100%;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.latte .latte_main li{
+    width: 45%;
+    margin:0 0 60px 5%;
+    text-align: center;
+}
+.latte .latte_main li img{
+    width:90%;
+    max-width: 333px;
+}
+.latte .latte_main li h2{
+    margin-bottom: 10px;
+    color:#202023;
+    font-size: 18px;
+}
+.latte .latte_main li h3{
+    color: #e0b08d;
+    margin-top: 36px;
+    font-size: 13px;
+    font-weight: 800;
+}
+.latte .latte_main li p{
+    color:#a9856a;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.latte_bot{
+    background: #f5f5f5;
+    padding: 11px 30px 12px 30px;
+    margin-top: 30px;
+    line-height: 22px;
+}
+.latte_bot li{}
+.latte_bot li p{
+    font-size: 13px;
+    font-family: 'Noto Sans KR', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    color: #000;
+}
+.latte_bot li p span{
+    display: inline-block;
+    width: 16px;
+    background: #c4a066;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    color: #fff;
+    margin-right: 10px;
+    line-height: 17px;
+}
+
+.bean_bottom{
+    padding:70px 0 100px;
+    margin:0 auto;
+    position: relative;
+    max-width: 1180px;
+}
+
+.bot_wrap{
+    margin: 0 47px;
+}
+.bot_wrap h3{
+    padding-bottom: 23px;
+    background: url("../img/beanist_tt_s.gif") no-repeat left bottom;
+    color:#202023;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bean_how{
+    display: flex;
+    width: 100%;
+    margin:40px 0 15px;
+}
+.bean_how li{
+    width:32.8%;
+    height: 148px;
+    margin:0 4.22% 0 0;
+    padding: 52px 6% 52px;
+    font-size: 15px;
+}
+.bean_how li::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 21px;
+    background: url("../img/step_icon.gif") no-repeat;
+}
+.bean_how li:nth-child(1)::after{
+    left:382px;
+    top:28%
+}
+.bean_how li:nth-child(2)::after{
+    right:425px;
+    top:28%;
+}
+.bean_how li:nth-child(3)::after{
+    background: none;
+}
+.bean_how li:nth-child(1){
+    background: url("../img/beanist_step01_01.gif") 8% center no-repeat, url("../img/beanist_step01_02.gif") 92% center no-repeat #f4f4f2;
+}
+.bean_how li:nth-child(2){
+    background: url("../img/beanist_step02_01.gif") 8% center no-repeat, url("../img/beanist_step02_02.gif") 92% center no-repeat #f4f4f2;
+}
+.bean_how li:nth-child(3){
+    background: url("../img/beanist_step03_01.gif") 8% center no-repeat, url("../img/beanist_step03_02.gif") 92% center no-repeat #f4f4f2;
+}
+
+.bot_wrap p{
+    margin-bottom: 45px;
+    font-size: 15px;
+    color:#464646;
+    line-height: 1.7em;
+}
+
+.bean_val{
+    width: 500px;
+    display: flex;
+    margin:40px auto 0;
+    justify-content: center;
+    align-items: center;
+}
+.bean_val li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    background: #1a437b;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+.bean_val li img{
+    border: 0px;
+    vertical-align: top;
+}
+.bean_val li p{
+    margin: 22px 0 20px;
+    color:#fff;
+    font-size: 18px;
+}
+
+

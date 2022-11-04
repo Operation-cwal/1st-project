@@ -2,10 +2,13 @@
 
 /* common.css */
 
+
+
 html,body{ margin:0; font-size:20px;}
 *{
     box-sizing: border-box;
     color:#626262;
+    font-style: normal;
 }
 ul,li{
     list-style-type: none;
