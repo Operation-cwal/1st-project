@@ -59,9 +59,18 @@ function sliding(w){
     },500)
 };
 
+$(".page_c_btn li").on("click",function(){
+    
+    let num = $(this).index()
+   
+    $(".slider").css({
+        transform:`translateX(${-num * 101}%)`,
+        transition:`0.5s`
+    });
+});
+
 $("document").ready(function(){
     $(".page_c_btn li label").click(function(){
-        let i = $(this).index();
         $(".page_c_btn li label").removeClass("on");
         $(this).addClass("on");
     });
@@ -69,3 +78,20 @@ $("document").ready(function(){
 
 /* ---------------------------------비니스트------------------------------------*/
 
+$("document").ready(function(){
+    $(".beanist_btn li label").click(function(){
+        let o = $(this).index();
+        $(".beanist_btn li label").removeClass("on");
+        $(this).addClass("on");
+    })
+})
+
+$(".beanist_btn li").on("click",function(){
+    
+    let idx = $(this).index()
+   
+    $(".beanist_pic ul").css({
+        transform:`translateX(${-idx * 101}%)`,
+        transition:`0.5s`
+    });
+});

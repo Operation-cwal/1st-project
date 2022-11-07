@@ -281,7 +281,7 @@
     margin: 5px;
 }
 
-.page_c_btn li label.on{
+.visual_1 .page_btn .page_c_btn li label.on{
     background-color: #243c84;
 }
 .visual_1 .page_btn .page_c_btn label:hover{
@@ -349,30 +349,30 @@
     text-align: center;
     height:283px;
 }
-.visual_2 .beanist_pic ul .americano{
+.visual_2 .beanist_pic ul li:nth-child(1){
     flex-shrink:0;
     width:100%;
     margin:0.2%;
 }
-.visual_2 .beanist_pic ul .americano a{
+.visual_2 .beanist_pic ul li:nth-child(1) a{
     margin:2%
 }
-.visual_2 .beanist_pic ul .americano a img{}
+.visual_2 .beanist_pic ul li:nth-child(1) a img{}
 
 
-.visual_2 .beanist_pic ul.latte{
+.visual_2 .beanist_pic ul li:nth-child(2){
     flex-shrink:0;
     width:100%;
 }
-.visual_2 .beanist_pic ul .latte a{}
-.visual_2 .beanist_pic ul .latte a img{}
+.visual_2 .beanist_pic ul li:nth-child(2) a{}
+.visual_2 .beanist_pic ul li:nth-child(2) a img{}
 
-.visual_2 .beanist_pic ul .coffee_mix{
+.visual_2 .beanist_pic ul li:nth-child(3){
     flex-shrink:0;
     width:100%;
 }
-.visual_2 .beanist_pic ul .coffee_mix a{}
-.visual_2 .beanist_pic ul .coffee_mix a img{}
+.visual_2 .beanist_pic ul li:nth-child(3) a{}
+.visual_2 .beanist_pic ul li:nth-child(3) a img{}
 
 .visual_2 .beanist_btn{
     display:flex;
@@ -394,7 +394,7 @@
 .visual_2 .beanist_btn li label:hover{
     background-color: #90470c;
 }
-.visual_2 .beanist_btn li input:checked + label{
+.beanist_btn li label.on{
     background-color: #90470c;
 }
 

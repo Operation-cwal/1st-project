@@ -14,6 +14,14 @@ $(".bean_tab li").on("click",function(){
 });
 
 $("document").ready(function(){
+    $(".prod_sort li").click(function(){
+        let j = $(this).index();
+        $(".prod_sort li").removeClass("on");
+        $(this).addClass("on");
+    });
+});
+
+$("document").ready(function(){
     $(".bean_tab li").click(function(){
         let i = $(this).index();
         $(".bean_tab li").removeClass("on");
@@ -21,10 +29,3 @@ $("document").ready(function(){
     });
 });
 
-$("document").ready(function(){
-    $(".prod_sort li").click(function(){
-        let j = $(this).index();
-        $(".prod_sort li").removeClass("on");
-        $(this).addClass("on");
-    });
-});

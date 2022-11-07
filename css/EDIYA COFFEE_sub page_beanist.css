@@ -4,8 +4,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Nunito+Sans:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Nunito+Sans:wght@200;900&display=swap');
 
+.top_nav{
+    background-color: #fff;
+    padding:0;
+    display:block;
+    position:relative;
+}
+.top_align{
+    background-color: #243c84;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.top_align .nav{
+    display:flex;
+}
+.top_align .nav_1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.top_align .nav_1 li{
+    font-size:13px;
+    padding:16px 0;
+}
+.top_align .nav_1 li a{
+    color:#fff;
+}
+.top_align .nav_2 li a{
+    color:#fff;
+}
+.top_align .nav_2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.top_align .nav_2 li{
+    font-size:13px;
+}
+.top_align .icon{
+    margin: 6px 20px 0 0;
+}
+.top_align .icon a{
+    margin:0px auto;
+}
+.top_align .search form{
+    position:relative;
+    width:195px;
+}
+.top_align .search form input{
+    width:163px; height:32px
+}
+
+.top_align .search form a{
+    position:absolute;
+    right:40px; top:10px;
+    display:block;
+    width:20px; height:30px;
+    background:url("../img/icon_search.gif") no-repeat;
+    text-decoration:none;
+}
+.top_align .search form a .blind{
+    display:none;
+}
+.title{
+    position:sticky;
+    margin-top: 30px;
+    z-index: 10;
+}
+.title a{}
+.title a img{
+    display:flex;
+    margin:0px auto;
+}
+.title ul{
+    justify-content: center;
+    align-items: center;
+}
+.title ul li{}
+.title .sub_title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .sub_title li{
+    margin:25px 45px;
+    font-size:16px;
+}
+
+
+.top_align .nav_1 li::before{
+    content:"";
+    border-left:1px solid #243c84;
+    margin: 0 0 0 20px;
+}
+.top_align .nav_1 .on::before{
+    border-left:0;
+}
+.top_align .nav_1 li::after{
+    content:"";
+    border-left:1px solid #fff;
+    margin: 0 0 0 20px;
+}
+.top_align .nav_1 li:nth-child(4)::after{
+    content:"";
+    border-left:0;
+}
+.top_align .nav_1 .on{
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.top_align .nav_1 .on a{
+    color:#243c84;
+}
+
+.top_align .nav .nav_2 li::after{
+    content:"";
+    border-left:1px solid #fff;
+    margin:20px;
+}
+
+.top_align .nav .nav_2 li:nth-child(5)::after{
+    margin:0 20px 0 0;
+    border-left:0;
+}
+
+
 .contents_wrap{
-    padding-top: 130px;
+/*     padding-top: 130px; */
     position: relative;
 }
 
@@ -32,7 +163,7 @@
 
 .prod_sort{
     position: absolute;
-    top:431px;
+    top:320px;
     text-align:center;
     width:100%;
     display: flex;
@@ -376,3 +507,104 @@
 }
 
 
+.bot_align{
+    background-color: #262626;
+}
+.bot_align .bot_list{
+    display: flex;
+    width:1180px;
+    padding:15px;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.bot_align .bot_list .bot_nav{
+    display:flex;
+}
+.bot_align .bot_list .bot_lang{
+    width:170px; height:30px;
+    padding:0px 13px;
+}
+.bot_align .bot_list .bot_nav li{
+    font-size: 0;
+    padding: 0 20px;
+}
+.bot_align .bot_list .bot_nav li a{
+    font-size:13px;
+    color:#818181;
+}
+.bot_align .bot_list .bot_nav li:nth-of-type(2) a{
+    color :#fff;
+}
+
+.bot_align .bot_ccm{
+    position:relative;
+}
+.bot_align .bot_ccm::before{
+    content : "";
+    border-bottom: 1px solid #818181;
+    display:block;
+    margin-bottom: 30px;
+}
+.bot_align .bot_ccm img{
+    position:absolute;
+    right:19%;
+}
+.bot_align .bot_text{
+    text-align: center;
+    font-size: 12px;
+    position:relative;
+    width:100%;
+    margin-top:80px;
+}
+.bot_align .bot_text .bot_logo{
+    position:absolute;
+    right:45%; top:-30%;
+    margin:-10px 0;
+}
+.bot_align .bot_text .bot_logo img{}
+
+.bot_align .bot_text .bot_address{
+    display: flex;
+    justify-content: center;
+    margin:0 auto 5px;
+}
+
+.bot_align .bot_text .bot_address2{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+}
+.bot_align .bot_text .bot_address li{}
+.bot_align .bot_text .bot_address li span{
+    color:#818181;
+}
+.bot_align .bot_text .bot_address2 li span{
+    color:#818181;
+}
+.bot_align .bot_text .bot_address li:nth-child(1){
+    background: url("../img/footer_line.gif") no-repeat right;
+    margin-right:10px; padding-right:10px;
+}
+.bot_align .bot_text .bot_address li:nth-child(2){
+    background: url("../img/footer_line.gif") no-repeat right;
+    margin-right:10px; padding-right:10px;
+}
+.bot_align .bot_text .bot_address li:nth-child(3){}
+.bot_align .bot_text .bot_address2 li:nth-child(1){
+    background: url("../img/footer_line.gif") no-repeat right;
+    margin-right:10px; padding-right:10px;
+    display:inline-block;
+}
+.bot_align .bot_text .bot_address2 li:nth-child(2){
+    background: url("../img/footer_line.gif") no-repeat right;
+    margin-right:10px; padding-right:10px;
+}
+.bot_align .bot_text .bot_address2 li:nth-child(3){}
+
+.bot_align .bot_text .bot_copyright{
+    padding: 30px 0;
+}
+.bot_align .bot_text .bot_copyright p{
+    color:#818181; 
+}
